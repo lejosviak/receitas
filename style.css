@@ -1,97 +1,90 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8e5f0; /* rosa bebê claro */
+  color: #4b2e2a; /* marrom escuro */
 }
 
 header {
-    background-color: #e4b9b1;
-    padding: 20px 0;
-    text-align: center;
+  background-color: #4b2e2a;
+  color: #f8e5f0;
+  padding: 20px;
+  text-align: center;
 }
 
-header .logo img {
-    width: 150px;
+nav {
+  background-color: #623c38; /* variação de marrom */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 10px 0;
+nav a {
+  color: #f8e5f0;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
+nav a:hover {
+  text-decoration: underline;
 }
 
-header nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+.hero {
+  text-align: center;
+  padding: 40px;
 }
 
-.intro {
-    text-align: center;
-    margin: 40px 0;
+.hero img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
 }
 
-.intro h1 {
-    font-size: 36px;
-    color: #e4b9b1;
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
-.intro p {
-    font-size: 18px;
-    color: #777;
+.recipe-card {
+  background-color: #fff1f8; /* rosa bebê mais suave */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
 }
 
-.receitas {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 20px;
+.recipe-card:hover {
+  transform: scale(1.02);
 }
 
-.receita {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    overflow: hidden;
-    width: 280px;
-    text-align: center;
+.recipe-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
-.receita img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.recipe-card .content {
+  padding: 15px;
 }
 
-.descricao {
-    padding: 20px;
-    background-color: #e4b9b1;
+.recipe-card .content h3 {
+  margin: 0 0 10px;
+  color: #4b2e2a;
 }
 
-.descricao h3 {
-    font-size: 24px;
-    color: #fff;
-}
-
-.descricao p {
-    font-size: 16px;
-    color: #fff;
+.recipe-card .content p {
+  margin: 0;
+  font-size: 0.95em;
+  color: #5a403c;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #e4b9b1;
-    color: #fff;
+  background-color: #4b2e2a;
+  color: #f8e5f0;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
 }
