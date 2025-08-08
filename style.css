@@ -49,6 +49,19 @@ nav a:hover {
   transform: scale(1.02);
 }
 
+/* Estilo do link dentro do card para deixar mais bonito e sem azul */
+.recipe-card a {
+  color: #4b2e2a; /* marrom escuro */
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.recipe-card a:hover {
+  color: #a85a7c; /* rosa mais escuro no hover */
+  text-decoration: none;
+}
+
 .recipe-card img {
   width: 100%;
   height: 200px;
@@ -59,8 +72,11 @@ nav a:hover {
   padding: 15px;
 }
 
-.recipe-card h3 {
+.recipe-card .content h3 {
   margin: 0 0 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #4b2e2a; /* marrom escuro */
 }
 
 .recipe-card p {
